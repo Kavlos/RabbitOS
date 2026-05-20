@@ -1,0 +1,28 @@
+name: Build RabbitOS ISO
+
+on:
+  workflow_dispatch: # Gives you a manual build button
+
+jobs:
+  build-iso:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install Debian Build Dependencies
+        run: |
+          sudo apt update
+          sudo apt install -y live-build squashfs-tools xorriso isolinux
+
+      - name: Build the Operating System
+        run: |
+          sudo lb clean
+          sudo lb config
+          sudo lb build
+
+      - name: Save ISO Download File
+        uses: actions/upload-artifact@v4
+        with:
+          name: RabbitOS-Live-Image
+          path: "*.iso"
