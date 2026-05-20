@@ -28,7 +28,7 @@ lb config noauto \
 --iso-volume debian-live-config-5.0.0 \
 --linux-packages "linux-image linux-headers" \
 --bootappend-live "boot=live config splash" \
---memtest memtest86+
+--memtest memtest86+ \
 --desktop gnome \
 
 "${@}"
