@@ -1,25 +1,36 @@
 name: Build RabbitOS ISO
 
 on:
-  workflow_dispatch: # Gives you a manual build button
+  workflow_dispatch: # Manual run button
 
 jobs:
   build-iso:
     runs-on: ubuntu-latest
+    # Forces GitHub to run inside a true Debian environment so the script works perfectly
+    container:
+      image: debian:testing
+      options: --privileged # Gives permissions needed to build filesystem loops
+
     steps:
+      - name: Install Critical Git & Core Tools
+        run: |
+          apt update
+          apt install -y git coreutils
+
       - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Install Debian Build Dependencies
         run: |
-          sudo apt update
-          sudo apt install -y live-build squashfs-tools xorriso isolinux
+          apt update
+          apt install -y live-build squashfs-tools xorriso isolinux live-boot systemd-container
 
       - name: Build the Operating System
         run: |
-          sudo lb clean
-          sudo lb config
-          sudo lb build
+          # Re-initializes clean variables inside the correct system environment
+          lb clean
+          lb config
+          lb build
 
       - name: Save ISO Download File
         uses: actions/upload-artifact@v4
