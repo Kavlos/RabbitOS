@@ -345,3 +345,5 @@ task-gnome-desktop
 gnome-core
 gdm3
 
+fastfetch
+
