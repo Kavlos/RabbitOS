@@ -27,7 +27,7 @@ lb config noauto \
 --iso-publisher debian-live-config \
 --iso-volume debian-live-config-5.0.0 \
 --linux-packages "linux-image linux-headers" \
---bootappend-live "boot=live config splash" \
+--bootappend-live "boot=live config splash plymouth.theme=rabbitos-boot" \
 --memtest memtest86+ 
 
 "${@}"
