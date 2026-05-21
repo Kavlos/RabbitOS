@@ -346,10 +346,11 @@ gdm3
 fastfetch
 ufw
 preload
-adw-gtk3-theme
+gnome-themes-extra
 papirus-icon-theme
 firefox-esr
 clamav
 clamav-daemon
 steam-installer
+
 
