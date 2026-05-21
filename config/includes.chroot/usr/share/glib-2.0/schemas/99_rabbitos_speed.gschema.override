@@ -10,5 +10,7 @@ sleep-inactive-battery-type='nothing'
 sleep-inactive-ac-type='nothing'
 
 [org.gnome.desktop.peripherals.touchpad]
+gtk-theme='adw-gtk3-dark'
+icon-theme='Papirus-Dark'
 # Optimize pointer acceleration layers for snappy tracking feel
 speed=0.2
