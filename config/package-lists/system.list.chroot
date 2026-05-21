@@ -340,3 +340,8 @@ user-setup
 live-tools
 eject
 #Alt: installation-birthday
+
+task-gnome-desktop
+gnome-core
+gdm3
+
