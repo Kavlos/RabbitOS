@@ -6,7 +6,6 @@ lb config noauto \
 --apt-recommends false \
 --apt-indices false \
 --architectures amd64 \
---foreign-architectures i386 \
 --archive-areas 'main contrib non-free non-free-firmware' \
 --backports true \
 --security true \
