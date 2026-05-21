@@ -1,0 +1,6 @@
+PRETTY_NAME="RabbitOS"
+NAME="RabbitOS"
+VERSION_ID="1.0"
+VERSION="1.0 (Bunny)"
+ID=rabbitos
+ID_LIKE=debian
