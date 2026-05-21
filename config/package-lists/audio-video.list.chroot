@@ -182,13 +182,10 @@ gnome-sound-recorder
 
 #Section: Audio system
 #Description: pulseaudio
+pipewire-audio
+wireplumber
+pipewire-pulse
 pavucontrol
-pulseaudio
-pulseaudio-utils
-pulseaudio-module-bluetooth
-pulseaudio-module-lirc
-#Alt: pulseaudio-module-zeroconf
-pulseaudio-module-jack
 kmod
 alsa-tools
 alsa-utils
