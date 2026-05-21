@@ -1,0 +1,14 @@
+[org.gnome.desktop.interface]
+# Force a clean system dark mode to save rendering draw calls
+color-scheme='prefer-dark'
+# Disable heavy window accessibility zoom/fade animations
+enable-animations=true
+
+[org.gnome.settings-daemon.plugins.power]
+# Prevent the system from wasting CPU cycles aggressively sleeping disk write layers
+sleep-inactive-battery-type='nothing'
+sleep-inactive-ac-type='nothing'
+
+[org.gnome.desktop.peripherals.touchpad]
+# Optimize pointer acceleration layers for snappy tracking feel
+speed=0.2
