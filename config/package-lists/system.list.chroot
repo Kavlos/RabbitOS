@@ -349,4 +349,7 @@ preload
 adw-gtk3-theme
 papirus-icon-theme
 firefox-esr
+clamav
+clamav-daemon
+steam-installer
 
