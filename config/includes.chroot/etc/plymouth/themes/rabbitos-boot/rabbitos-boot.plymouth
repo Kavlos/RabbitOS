@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=RabbitOS Boot Splash
+Description=A beautiful boot logo for RabbitOS
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/rabbitos-boot
+ScriptFile=/usr/share/plymouth/themes/rabbitos-boot/rabbitos-boot.script
