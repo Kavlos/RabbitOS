@@ -1,0 +1,31 @@
+{
+    "$schema": "https://github.com",
+    "logo": {
+        "source": "/usr/share/rabbitos/rabbit-logo.png", // Swap path to rabbit.txt if using ASCII art
+        "type": "auto", // Set to "kitty" if you want full high-res PNG pixel rendering
+        "width": 28,
+        "height": 12,
+        "padding": {
+            "right": 3
+        }
+    },
+    "modules": [
+        "title",
+        "separator",
+        "os",
+        "host",
+        "kernel",
+        "uptime",
+        "packages",
+        "shell",
+        "display",
+        "de",
+        "wm",
+        "terminal",
+        "cpu",
+        "gpu",
+        "memory",
+        "break",
+        "colors"
+    ]
+}
