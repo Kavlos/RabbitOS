@@ -1,14 +1,9 @@
-# 1. Grab your wallpaper file from your gnome backgrounds path
-# (Replace 'cool-wallpaper-01.jpg' with the exact filename of one of your 5 wallpapers)
-bg_image = Image("/usr/share/backgrounds/gnome/cool-wallpaper-01.jpg");
+bg_image = Image("/usr/share/backgrounds/gnome/rabbitos1.jpg");
 bg_sprite = Sprite(bg_image);
 
-# 2. Grab your rabbit logo asset file from your rabbitos folder
-# (Replace 'rabbit-logo.png' with the exact filename of your logo)
 logo_image = Image("/usr/share/rabbitos/rabbit-logo.png");
 logo_sprite = Sprite(logo_image);
 
-# 3. Scale and center the wallpaper to fit any display screen size
 screen_width = Window.GetWidth();
 screen_height = Window.GetHeight();
 
@@ -16,7 +11,6 @@ bg_scale_x = screen_width / bg_image.GetWidth();
 bg_scale_y = screen_height / bg_image.GetHeight();
 bg_sprite.SetImage(bg_image.Scale(bg_image.GetWidth() * bg_scale_x, bg_image.GetHeight() * bg_scale_y));
 
-# 4. Perfectly center your rabbit logo over the background
 logo_x = (screen_width / 2) - (logo_image.GetWidth() / 2);
 logo_y = (screen_height / 2) - (logo_image.GetHeight() / 2);
 
