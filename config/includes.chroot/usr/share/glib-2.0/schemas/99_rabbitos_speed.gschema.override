@@ -3,6 +3,8 @@
 color-scheme='prefer-dark'
 # Disable heavy window accessibility zoom/fade animations
 enable-animations=true
+gtk-theme='adw-gtk3-dark'
+icon-theme='Papirus-Dark'
 
 [org.gnome.settings-daemon.plugins.power]
 # Prevent the system from wasting CPU cycles aggressively sleeping disk write layers
@@ -10,7 +12,8 @@ sleep-inactive-battery-type='nothing'
 sleep-inactive-ac-type='nothing'
 
 [org.gnome.desktop.peripherals.touchpad]
-gtk-theme='adw-gtk3-dark'
-icon-theme='Papirus-Dark'
 # Optimize pointer acceleration layers for snappy tracking feel
 speed=0.2
+
+[org.gnome.shell]
+favorite-apps=['org.gnome.Terminal.desktop', 'firefox-esr.desktop', 'org.gnome.Nautilus.desktop']
