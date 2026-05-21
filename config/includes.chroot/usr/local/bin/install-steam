@@ -1,0 +1,9 @@
+#!/bin/bash
+echo "Welcome to the RabbitOS Steam Setup Utility"
+echo "Activating 32-bit architecture and updating repositories..."
+sudo dpkg --add-architecture i386
+sudo apt update
+echo "Installing Steam and core gaming libraries..."
+sudo apt install -y steam
+echo "Steam installation complete! Launching now..."
+steam &
