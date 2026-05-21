@@ -50,17 +50,6 @@ catfish
 
 #Section: Desktop environment
 #Description: xfce4
-xfdesktop4
-xfwm4
-xfce4-session
-xfce4-notifyd
-xfce4-whiskermenu-plugin
-gmrun
-xfce4-panel
-xfce4-places-plugin
-xfce4-weather-plugin
-xfce4-netload-plugin
-xfce4-pulseaudio-plugin
 #Alt: plank
 #Alt: kupfer
 #Alt: gnome-pie
